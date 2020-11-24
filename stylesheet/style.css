@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+/** General- Apply for entire body**/
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
 a{
     text-decoration: none;
     color: #000000;
@@ -5,12 +11,13 @@ a{
 a:hover{
     text-decoration: none;
     color: #000;
-
 }
+/**General End**/
+/**NavBar Start**/
 #logo-img {
     background: url('../images/logo-medium.png') no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-top: 5px;
   }
 .navbar-brand h1{
@@ -27,10 +34,10 @@ a:hover{
     color: #000000;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-    color: #6CADDF;
+    color: #0069d9;
 }
 .navbar-brand {
-    padding: 10px 0 0 1px;
+    padding: 2px 0 0 1px;
     width: fit-content;
     height: fit-content;
 }
@@ -44,10 +51,13 @@ a:hover{
 .navbar-brand span{
     margin-top: -7px;
     font-size: .75em;
-    color:#6CADDF;
+    color:#0069d9;
 }
 .navbar-brand h4{
     margin: 0;
+}
+#serviceDropdownDiv:hover #serviceDropdownContents,#moreDropdownDiv:hover #moreDropdownContents{
+    display: block;
 }
 .collapse button{
     z-index: 1;
@@ -56,23 +66,73 @@ a:hover{
 }
 .collapse button:hover{
     box-shadow: none;
-    
 }
 .bi-telephone-fill{
     color:#ffffff;
     margin-left:10px;
     margin-top: 10px;
 }
+.call-icon:hover{
+    background-color:  #0069d9;
+    z-index: 0;
+    box-shadow: none;
+}
 .call-icon{
     width: 40px;
     height: 40px;
     background-color: #000000;
     border-radius: 50%;
+    z-index: 1;
+    box-shadow:1px 1px 10px #888888 ;
 }
 .tele-number{
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 5px;
+    cursor: context-menu;
 }
+/**NavBar End**/
+/** Footer  **/
+footer{
+    padding-top: 10px;
+}
+footer,footer a{
+    background-color: #050404;
+    color: #ffffff;
+}
+
+footer ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+footer a:hover{
+    color: #ffffff;
+}
+footer section .fa {
+    padding: 0 20px 0 0;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer section .fa:hover{
+    color: #ffffff;
+}
+footer section ul li,footer section ul a,footer section .fa{
+    color: #808080;
+}
+footer .copyrights{
+    color: #808080;
+    padding-bottom: 10px;
+}
+footer section .horizontal-rule{
+    background-color: #808080;
+}
+/** End Footer  **/
+/**Login Page**/
 .login-header{
     height: 25%;
     width: 100%;
@@ -110,9 +170,167 @@ a:hover{
     position: absolute;
     z-index: -1;
 }
+/**Login Page End**/
+
 /********** Devices with max-width 1199px **********/
 @media (max-width: 1199px){
     /* Header */
-  
-  /* End Header */
+    /** NavBar**/
+    .nav-item{
+        margin-left: 10px;
+    }
+    /** End NavBar**/
+    /* End Header */
+    /** Footer  **/
+    
+    /** End Footer  **/
 }
+/****Devices of with max-width 991px ie. Medium Devices**/
+@media(max-width:991px){
+    /** NavBar**/
+    .horizontal-rule{
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    /** End NavBar**/
+    /** Footer  **/
+    footer section .horizontal-rule{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /** End Footer  **/
+}
+/****Devices of with max-width 767px ie. Small Devices **/
+@media(max-width:767px){
+    /** NavBar**/
+    .horizontal-rule{
+        margin-left: -18px;
+        margin-right: -18px;
+    }
+
+    /** End NavBar**/
+
+    /**the middle layer**/
+    /** Footer  **/
+    footer{
+        text-align: center;
+    }
+    #infoFooter{
+        clear: left;
+    }
+    #siteNav{
+        float: left;
+    }
+    #aboutUs{
+        float: right;
+    }
+    /** End Footer  **/
+}
+/****Devices of with max-width 575px ie. Extra Small devices**/
+@media(max-width:575px){
+    /** NavBar**/
+    .horizontal-rule{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /** End NavBar**/
+}
+/**How it works**/
+.rise ul li
+{
+    
+    font-size:30px;
+    list-style-type:square;
+    color: #0069d9;
+    line-height: 2px;
+}
+
+.rise ul h1
+{
+    color: black;
+    font-size: 30px;
+
+} 
+.imgm
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ptm
+{
+    padding-top: 30px;
+}
+.ptm ul 
+{
+    list-style: square;
+    color: #0069d9;
+}
+.ptm ul li p
+{
+    color: black;
+}
+.c1
+{
+    position: absolute;
+    top: 50%;
+}
+.ort .ort1
+{
+    background-color:#0069d9;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    margin-bottom:30px;
+}
+.ort .ort1 h1
+{
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+.tpor
+{
+    margin-top: 80px;
+}
+.bull
+{
+    border: 2px solid #0069d9;
+    padding:1px 3px 1px 3px;
+    border-radius: 100px;
+
+}
+header
+{
+    position: sticky !important;
+}
+@media(max-width:993px)
+{
+    .ptm ul li
+    {
+        text-align:center;
+    }
+
+}
+.ort .ort1
+{
+    border-radius: 10px;
+}
+.imgontxt
+{
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    position: static;
+    
+}
+.imgontxt p
+{
+    font-size: 70px;
+    font-family:'Castoro', serif;
+}
+.imgontxt h6
+{
+   font-size: 25px;
+}
+/**How it works Ends**/
