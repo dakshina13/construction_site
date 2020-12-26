@@ -226,6 +226,27 @@ footer .copyrights{
 footer section .horizontal-rule{
     background-color: #808080;
 }
+#siteNav{
+    order:1;
+}
+#infoFooter{
+    order:2;
+}
+#aboutUs{
+    order:3;
+}
+@media (min-width:768px) and (max-width:992px){
+    #siteNav{
+        order:1;
+    }
+    #infoFooter{
+        order:3;
+        padding-bottom: 30px;
+    }
+    #aboutUs{
+        order:2;
+    }
+}
 /** End Footer  **/
 /**Home Page**/    
 
