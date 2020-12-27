@@ -110,10 +110,7 @@ input[type=number] {
 }
 /**General Button Ends**/
 /**NavBar Start**/
-header{
-    position: relative;
-    z-index: 2;
-}
+
 #logo-img {
     background: url('../images/logo-medium.png') no-repeat;
     width: 40px;
@@ -123,8 +120,15 @@ header{
 .navbar-brand h1{
     font-size: 1.5em;
 }
+header{
+}
 .navbar{
     background-color: #edf5fc;
+    transition: background 400ms ease;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-scrolled{
+    background-color: #fff;
 }
 .nav-item{
     text-align: center;
