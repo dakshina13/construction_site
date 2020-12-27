@@ -193,16 +193,13 @@ const servicesHome=document.getElementById("services-home");
 const ourProjectsHome=document.getElementById("our-projects-home");
 if(servicesHome!=null){
     const header=document.querySelector("nav");
-    console.log(header);
     const blueBackgroundDivOptions={
         root:null,
         threshold:0,
         rootMargin:"-12% 0% -85% 0%"
     };
     const blueBackgroundDivObserver=new IntersectionObserver(function(entries){
-        console.log(entries);
         entries.forEach(entry=>{
-            console.log(entry);
             if(entry.isIntersecting){
                 header.classList.add("navbar-scrolled");
             }else{

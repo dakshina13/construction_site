@@ -120,8 +120,6 @@ input[type=number] {
 .navbar-brand h1{
     font-size: 1.5em;
 }
-header{
-}
 .navbar{
     background-color: #edf5fc;
     transition: background 400ms ease;
