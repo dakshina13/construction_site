@@ -188,3 +188,26 @@ function showPassword() {
 
 }
 /**show Password Ends*/
+/**Home Navbar tranistion */
+const servicesHome=document.getElementById("services-home");
+const ourProjectsHome=document.getElementById("our-projects-home");
+if(servicesHome!=null){
+    const header=document.querySelector("nav");
+    const blueBackgroundDivOptions={
+        root:null,
+        threshold:0,
+        rootMargin:"-12% 0% -85% 0%"
+    };
+    const blueBackgroundDivObserver=new IntersectionObserver(function(entries){
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                header.classList.add("navbar-scrolled");
+            }else{
+                header.classList.remove("navbar-scrolled");
+            }
+        })
+    },blueBackgroundDivOptions);
+    blueBackgroundDivObserver.observe(servicesHome);
+    blueBackgroundDivObserver.observe(ourProjectsHome);
+}
+/**Home Navbar tranistion End*/
