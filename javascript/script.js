@@ -41,14 +41,14 @@ if (costForm != null) {
 }
 /**Cost Estimator Code End */
 /**Code to pick time & date */
-$('#prefered-time').timepicker({
-    minTime: '10',
-    maxTime: '6:00pm',
-    defaultTime: '10',
-    scrollbar: true
-});
 var preferedDate = document.getElementById("prefered-date");
 if (preferedDate != null) {
+    $('#prefered-time').timepicker({
+        minTime: '10',
+        maxTime: '6:00pm',
+        defaultTime: '10',
+        scrollbar: true
+    });
     var today = new Date();
     var dd = today.getDate() + 1;
     var mm = today.getMonth() + 1; //January is 0!
