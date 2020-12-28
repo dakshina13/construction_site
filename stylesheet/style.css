@@ -18,6 +18,10 @@ a:hover{
 .main-content{
     position: relative;
     z-index: 1;
+    margin-top: 4%;
+}
+.main-content .container{
+    padding-top: 1%;
 }
 /**General End**/
 /**General input **/
@@ -448,7 +452,6 @@ footer section .horizontal-rule{
     margin-bottom: 8px;
 }
 #our-projects .main-content{
-    margin-top: 30px;
     margin-bottom: 45px;
 }
 #our-projects .main-content .row{
@@ -1000,7 +1003,6 @@ footer section .horizontal-rule{
     text-align: center;
 }
 #services .ourser{
-    margin-top: 20px;
     font-size: 2.5rem;
 }
 #services .headding1{
