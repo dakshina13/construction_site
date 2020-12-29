@@ -1037,7 +1037,7 @@ footer section .horizontal-rule{
 /**Services Page ENd**/
 /**Register Page**/
 #register{
-    margin-top:30px;
+    margin-top:9%;
     margin-bottom:60px;
 }
 #register .form-body{
@@ -1060,14 +1060,13 @@ footer section .horizontal-rule{
 /**My account Page**/
 #myAccount{
     margin-top:30px;
-    margin-bottom:60px;
 }
 #myAccount .details-body{
-    margin: 30px auto;
+    margin: 10% auto;
     position: relative;
     z-index: 1;
     box-shadow: 1px 1px 5px rgba(0,0,0,.25 );
-    padding:30px 50px 50px;
+    padding:30px 50px 60px;
 }
 #myAccount .details-body  .edit-div{
     width: 50px;
@@ -1129,11 +1128,24 @@ footer section .horizontal-rule{
     margin:3px 10px 0px 10px;
     transition: transform 350ms ease;
 }
+#myAccount .details-body .requested-services-dropdown .arrow-up{
+    transform:rotate(180deg);
+}
+#myAccount .details-body .requested-services-dropdown .arrow-down{
+    transform:rotate(0deg);
+}
 #myAccount .details-body .requested-services-div .service-contents{
-    display: none;
-    padding: 5px;
+    overflow: hidden;
     background-color: #f5fafd;
     border-radius: 0 0 5px 5px;
+    transition: height 350ms ease,padding 350ms ease;
+}
+#myAccount .details-body .requested-services-div .service-contents-hide{
+    height: 0px;
+}
+#myAccount .details-body .requested-services-div .service-contents-show{
+    height: 110px;
+    padding: 10px;
 }
 #myAccount .details-body .requested-services-dropdown .service-active{
     color: #4cf708;
@@ -1153,7 +1165,7 @@ footer section .horizontal-rule{
     font-style: italic;
 }
 #change-password{
-    margin-top:60px;
+    margin-top:9%;
     margin-bottom:60px;
 }
 #change-password .form-body{
