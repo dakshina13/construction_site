@@ -74,12 +74,17 @@ if (myRequestedServices != null) {
             var arrow = event.target.children[0];
             this.classList.toggle("active");
             var content = this.nextElementSibling.nextElementSibling;
-            if (content.style.display === "block") {
-                arrow.style.transform = "rotate(0deg)";
-                content.style.display = "none";
+            console.log(content.classList.contains("service-contents-hide"));
+            if (content.classList.contains("service-contents-hide")) {
+                arrow.classList.add("arrow-up");
+                arrow.classList.remove("arrow-down");
+                content.classList.remove("service-contents-hide");
+                content.classList.add("service-contents-show");
             } else {
-                arrow.style.transform = "rotate(180deg)";
-                content.style.display = "block";
+                arrow.classList.add("arrow-down");
+                arrow.classList.remove("arrow-up");
+                content.classList.add("service-contents-hide");
+                content.classList.remove("service-contents-show");
             }
         }, false);
     }
