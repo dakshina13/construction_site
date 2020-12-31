@@ -210,20 +210,25 @@ footer ul{
     margin:0;
     padding: 0;
 }
+footer li{
+    padding-bottom: 0.25rem;
+}
 footer a:hover{
     color: #ffffff;
 }
-footer section .fa {
+footer .social{
+    padding-left:2rem;
+}
+footer #aboutUs .fab {
     padding: 0 20px 0 0;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color: #ffffff;
+    margin: 5px 10px 5px 0;
+    color: #808080;
 }
-footer section .fa:hover{
+footer #aboutUs .fab:hover{
     color: #ffffff;
 }
 footer section ul li,footer section ul a,footer section .fa{
@@ -244,6 +249,35 @@ footer section .horizontal-rule{
 }
 #aboutUs{
     order:3;
+}
+#aboutUs li{
+    position: relative;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+#aboutUs li::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    color: #808080;
+    display: inline-block;
+    font-size: 1.2rem;
+    left:0;
+}
+#aboutUs li.project::before{
+    content: "\f1ad";
+}
+#aboutUs li.email::before{
+    content: "\f0e0";
+}
+#aboutUs li.phone::before{
+    content: "\f095";
+    font-weight: 900;
+}
+#aboutUs li.address::before{
+    content: "\f2bb";
+}
+#aboutUs li.clock::before{
+    content: "\f017";
 }
 @media (min-width:768px) and (max-width:992px){
     #siteNav{
@@ -903,7 +937,6 @@ footer section .horizontal-rule{
 #why-us .container-flex{
     position: relative;
 }
-
 #why-us .container-flex .container #why-us-header{
     position: absolute;
     bottom: 10px;
@@ -911,7 +944,7 @@ footer section .horizontal-rule{
 }
 #why-us .card-main-div{
     margin:30px auto 0;
-    height: 300px;
+    height: auto;
 }
 #why-us .card-main-div .card{
     border-radius: 10px;
