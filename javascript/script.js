@@ -50,9 +50,11 @@ if (preferedDate != null) {
         scrollbar: true
     });
     var today = new Date();
-    var dd = today.getDate() + 1;
-    var mm = today.getMonth() + 1; //January is 0!
-    var yyyy = today.getFullYear();
+    var tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate()+1);
+    var dd = tomorrow.getDate();
+    var mm = tomorrow.getMonth() + 1; //January is 0!
+    var yyyy = tomorrow.getFullYear();
     //prefixing zero to single digit numbers
     if (dd < 10) {
         dd = '0' + dd
@@ -60,9 +62,9 @@ if (preferedDate != null) {
     if (mm < 10) {
         mm = '0' + mm
     }
-    today = yyyy + '-' + mm + '-' + dd;
-    preferedDate.setAttribute('min', today);
-    preferedDate.setAttribute('value', today);
+    tomorrow = yyyy + '-' + mm + '-' + dd;
+    preferedDate.setAttribute('min', tomorrow);
+    preferedDate.setAttribute('value', tomorrow);
 }
 /*Code to pick time & date End*/
 /**Code for my account dropdown */
