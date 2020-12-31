@@ -950,39 +950,49 @@ footer section .horizontal-rule{
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    box-shadow: 1px 1px 6px  rgba(0,0,0,.25);
+    box-shadow: 3px 3px 5px  rgba(0,0,0,.25);
+    border-radius: 0;
+    border: none;
+    background-color: #edf5fc;
 }
 #why-us .card-main-div .card .row{
     padding-top: 15px;
 }
 #why-us .card-main-div .card-title{
-    padding: 20px;
     margin: 0;
+    position: relative;
+    font-weight: bold;
+    padding-left: 2rem;
 }
 #why-us .card-main-div .card-title::before{
     content: '\27AB';
     color: #0069d9;
-    margin-right: 10px;
+    position: absolute;
+    left:0;
+    font-size: 1.5rem;
+    bottom:0;
 }
 #why-us .card-main-div .card-image{
     text-align: center;
     padding-right:0 ;
 }
 #why-us .card-main-div .card-image img{
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: 80%;
 }
 #why-us .card-main-div .card-body{
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom:0 ;
+    padding:0 1.5rem 0 0;
+
 }
 #why-us .container{
     margin-bottom: 30px;
 }
 #why-us .card ul{
     list-style:none;
-    padding-left: 20px;
+    margin:2rem 0 1rem 2rem;
+}
+#why-us .card li{
+    margin-bottom: 1rem;
 }
 #why-us .card li::before{
     content: "\2692";
