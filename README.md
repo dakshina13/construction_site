@@ -4,6 +4,7 @@ Website for Construction business
 - bootstrap: v4.5.2 
 - jquery: v3.5.1
 - jquery time-picker: v1.3.5 (https://timepicker.co/)
+- Awesome Fonts: v5.15.1 
 # Web Page
 [Home](https://dakshina13.github.io/construction_site/index.html)
 
