@@ -147,6 +147,12 @@ input[type=number] {
 .navbar-brand h4{
     margin: 0;
 }
+.dropdown-menu{
+    border:none;
+    border-radius: 0;
+    box-shadow: 1px 1px 6px rgba(0,0,0,.25 );
+    margin: 0;
+}
 #serviceDropdownDiv:hover #serviceDropdownContents,#moreDropdownDiv:hover #moreDropdownContents{
     display: block;
 }
@@ -204,20 +210,25 @@ footer ul{
     margin:0;
     padding: 0;
 }
+footer li{
+    padding-bottom: 0.25rem;
+}
 footer a:hover{
     color: #ffffff;
 }
-footer section .fa {
+footer .social{
+    padding-left:2rem;
+}
+footer #aboutUs .fab {
     padding: 0 20px 0 0;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color: #ffffff;
+    margin: 5px 10px 5px 0;
+    color: #808080;
 }
-footer section .fa:hover{
+footer #aboutUs .fab:hover{
     color: #ffffff;
 }
 footer section ul li,footer section ul a,footer section .fa{
@@ -238,6 +249,35 @@ footer section .horizontal-rule{
 }
 #aboutUs{
     order:3;
+}
+#aboutUs li{
+    position: relative;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+#aboutUs li::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    color: #808080;
+    display: inline-block;
+    font-size: 1.2rem;
+    left:0;
+}
+#aboutUs li.project::before{
+    content: "\f1ad";
+}
+#aboutUs li.email::before{
+    content: "\f0e0";
+}
+#aboutUs li.phone::before{
+    content: "\f095";
+    font-weight: 900;
+}
+#aboutUs li.address::before{
+    content: "\f2bb";
+}
+#aboutUs li.clock::before{
+    content: "\f017";
 }
 @media (min-width:768px) and (max-width:992px){
     #siteNav{
@@ -897,7 +937,6 @@ footer section .horizontal-rule{
 #why-us .container-flex{
     position: relative;
 }
-
 #why-us .container-flex .container #why-us-header{
     position: absolute;
     bottom: 10px;
@@ -905,45 +944,55 @@ footer section .horizontal-rule{
 }
 #why-us .card-main-div{
     margin:30px auto 0;
-    height: 300px;
+    height: auto;
 }
 #why-us .card-main-div .card{
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    box-shadow: 1px 1px 6px  rgba(0,0,0,.25);
+    box-shadow: 3px 3px 5px  rgba(0,0,0,.25);
+    border-radius: 0;
+    border: none;
+    background-color: #edf5fc;
 }
 #why-us .card-main-div .card .row{
     padding-top: 15px;
 }
 #why-us .card-main-div .card-title{
-    padding: 20px;
     margin: 0;
+    position: relative;
+    font-weight: bold;
+    padding-left: 2rem;
 }
 #why-us .card-main-div .card-title::before{
     content: '\27AB';
     color: #0069d9;
-    margin-right: 10px;
+    position: absolute;
+    left:0;
+    font-size: 1.5rem;
+    bottom:0;
 }
 #why-us .card-main-div .card-image{
     text-align: center;
     padding-right:0 ;
 }
 #why-us .card-main-div .card-image img{
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: 80%;
 }
 #why-us .card-main-div .card-body{
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom:0 ;
+    padding:0 1.5rem 0 0;
+
 }
 #why-us .container{
     margin-bottom: 30px;
 }
 #why-us .card ul{
     list-style:none;
-    padding-left: 20px;
+    margin:2rem 0 1rem 2rem;
+}
+#why-us .card li{
+    margin-bottom: 1rem;
 }
 #why-us .card li::before{
     content: "\2692";
@@ -1034,10 +1083,6 @@ footer section .horizontal-rule{
 }
 /**Services Page ENd**/
 /**Register Page**/
-#register{
-    margin-top:9%;
-    margin-bottom:60px;
-}
 #register .form-body{
     margin: 30px auto;
     position: relative;
@@ -1056,11 +1101,8 @@ footer section .horizontal-rule{
 }
 /**Register Page End**/
 /**My account Page**/
-#myAccount{
-    margin-top:30px;
-}
 #myAccount .details-body{
-    margin: 10% auto;
+    margin: 5% auto;
     position: relative;
     z-index: 1;
     box-shadow: 1px 1px 5px rgba(0,0,0,.25 );
@@ -1163,12 +1205,8 @@ footer section .horizontal-rule{
     display: none;
     font-style: italic;
 }
-#change-password{
-    margin-top:9%;
-    margin-bottom:60px;
-}
 #change-password .form-body{
-    margin: 30px auto;
+    margin: 5% auto 10%;
     position: relative;
     z-index: 1;
     box-shadow: 1px 1px 5px rgba(0,0,0,.25 );
