@@ -1,7 +1,7 @@
 
 /*Code for Slide Show of cards */
-$('#recipeCarousel').carousel({
-    interval: 2000
+$('#services-carousel').carousel({
+    interval: 3000
 });
 
 $('.carousel .carousel-item').each(function () {
